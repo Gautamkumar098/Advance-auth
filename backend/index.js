@@ -20,6 +20,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "https://advance-auth-six.vercel.app",
+      "https://advance-auth-4q8qx7o2e-gautam-auth-2026.vercel.app",
     ],
     credentials: true,
   })
