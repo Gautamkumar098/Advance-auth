@@ -25,7 +25,8 @@ app.use(
   })
 );
 
-app.use(express.json()); // allows us to parse incoming requests:req.body
+app.use(express.json({ limit: "10mb" }));
+app.use(express.urlencoded({ extended: true, limit: "10mb" })); // allows us to parse incoming requests:req.body
 app.use(cookieParser()); // allows us to parse incoming cookies
 
 app.use("/api/auth", authRoutes);
